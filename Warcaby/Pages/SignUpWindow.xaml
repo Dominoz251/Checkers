@@ -1,0 +1,24 @@
+﻿<Window x:Class="Warcaby.Pages.SignUpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Warcaby"
+        mc:Ignorable="d"
+        Title="Checkers" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background.jpg"/>
+        </Grid.Background>
+        <Label Content="Sign Up" HorizontalAlignment="Left" Margin="342,49,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Background="{x:Null}" Foreground="Red"/>
+        <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Height="30" Margin="303,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="186" FontSize="16"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="303,86,0,0" VerticalAlignment="Top" Foreground="#FF0F0909"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="303,147,0,0" VerticalAlignment="Top" Foreground="#FFF9F9F9" RenderTransformOrigin="0.483,-0.985"/>
+        <Label Content="Re-type Password" HorizontalAlignment="Left" Margin="303,203,0,0" VerticalAlignment="Top" Foreground="Black"/>
+        <PasswordBox x:Name="PasswordBox1" HorizontalAlignment="Left" Margin="303,173,0,0" VerticalAlignment="Top" Width="186" Height="30" FontSize="16" PasswordChar="*"/>
+        <PasswordBox x:Name="PasswordBox2" HorizontalAlignment="Left" Margin="303,229,0,0" VerticalAlignment="Top" Width="186" Height="30" FontSize="16" PasswordChar="*"/>
+        <Button x:Name="signUpButton" Content="Sign Up" HorizontalAlignment="Left" Margin="303,264,0,0" VerticalAlignment="Top" Width="186" Height="32" Background="#FF10C1E8" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="14" IsCancel="True" Click="signUpButton_Click"/>
+        <Label Content="Already have an account?" HorizontalAlignment="Left" Margin="306,301,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.042,-0.273" Foreground="#FF040404"/>
+        <Label Content="Sign In" HorizontalAlignment="Left" Margin="451,301,0,0" VerticalAlignment="Top" Foreground="#FF298AFF" FontWeight="Bold" ForceCursor="True" MouseLeftButtonUp="Label_MouseLeftButtonUp" Background="{x:Null}"/>
+    </Grid>
+</Window>
